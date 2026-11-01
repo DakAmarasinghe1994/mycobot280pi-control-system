@@ -1,4 +1,5 @@
 # MyCobot280Pi Control System
+![myCobot 280 Pi and control hardware](./images/mycobot-hardware.jpg)
 
 Modular ROS 2 interfaces for controlling a myCobot 280 Pi
 six-degree-of-freedom collaborative robot and its virtual model
@@ -63,6 +64,13 @@ visualization in RViz.
 Physical-robot control and virtual-model control are independent
 subsystems; virtual commands should not be assumed to move the
 physical robot automatically.
+
+## RViz Demonstrations
+
+![myCobot virtual model in RViz](./images/mycobot-rviz1.jpg)
+![myCobot virtual model in RViz](./images/mycobot-rviz2.jpg)
+![myCobot virtual model in RViz](./images/mycobot-rviz3.png)
+![myCobot virtual model in RViz](./images/mycobot-rviz4.png)
 
 ## GUI and Script-Based Commands
 
