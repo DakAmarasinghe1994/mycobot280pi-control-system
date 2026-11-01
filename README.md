@@ -127,3 +127,15 @@ components integrated into the system.
 
 [GitHub Portfolio](https://github.com/DakAmarasinghe1994) |
 [LinkedIn](https://www.linkedin.com/in/dak-amarasinghe-946aa71b1/)
+
+## Source Code and Setup
+
+The source-code archive is available through Google Drive:
+
+[Download Source Code](https://drive.google.com/file/d/1Wi3yVN5NfvLlXAM1qBuxiE1cqvlsQHAI/view?usp=drive_link)
+
+See the [setup and execution instructions](./instructions/Instructions.txt) for setup,
+configuration, and execution details.
+
+After downloading, extract the archive and preserve the original
+ROS 2 workspace and package structure.
