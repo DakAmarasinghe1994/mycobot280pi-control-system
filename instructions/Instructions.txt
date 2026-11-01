@@ -1,0 +1,49 @@
+--------------------------New Implemented-----------------------------------
+
+* Note: Make sure to build the entire ros2 workspace after copy files from 'src-ros2_ws-may4.zip' to the main ros2 workspace. Then use the command: colcon build --symlink-install. Then source the terminals.
+
+
+-----Real Robot Control with Rviz---------
+
+-------------Option1---------------------
+* Virtual Controller GUI Commands
+In Terminal1: ros2 launch rover_launch joystick_control.launch.py
+In Terminal2: ros2 launch teleop_core_virtual virtual_controller.launch.py
+
+-------------Option2---------------------
+* Joint Control Commands
+In Terminal1: ros2 launch rover_launch mycobot_280pi.launch.py     
+In Terminal2: ros2 run mycobot_interface goal_joint_state_pub (Note: The joint coordinates can be edited in this file. Then rebuild the specific package after changes)
+
+-------------Option3---------------------
+* Cart Control Commands (with ik_solver (inverse kinematics))
+In Terminal1: ros2 launch rover_launch mycobot_280pi.launch.py  
+In Terminal2: ros2 run mycobot_interface ik_solver
+In Terminal3: ros2 run mycobot_interface goal_cart_state_pub (Note: The cartesian coordinates can be edited in this file. Then rebuild the specific package after changes)
+
+
+
+-----Virtual Robot Control with Rviz---------
+
+-------------Option1---------------------
+* Virtual Controller GUI Commands
+In Terminal1: ros2 launch rover_launch joystick_control_vir.launch.py
+In Terminal2: ros2 launch teleop_core_virtual virtual_controller.launch.py
+
+-------------Option2---------------------
+* Joint Control Commands
+In Terminal1: ros2 launch rover_launch mycobot_280pi_vir.launch.py     
+In Terminal2: ros2 run mycobot_interface goal_joint_state_pub   (Note: The joint coordinates can be edited in this file. Then rebuild the specific package after changes)
+
+-------------Option3---------------------
+* Cart Control Commands (with ik_solver (inverse kinematics))
+In Terminal1: ros2 launch rover_launch mycobot_280pi_vir.launch.py 
+In Terminal2: ros2 run mycobot_interface ik_solver
+In Terminal3: ros2 run mycobot_interface goal_cart_state_pub  (Note: The cartesian coordinates can be edited in this file. Then rebuild the specific package after changes)
+
+
+
+
+ 
+
+
